@@ -1,0 +1,4 @@
+{
+  "name": "java",
+  "image":  "lawrenceching/java-dev-container:jdk22"
+}
