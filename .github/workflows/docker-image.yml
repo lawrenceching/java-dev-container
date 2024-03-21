@@ -36,6 +36,6 @@ jobs:
 
     - name: Build the Docker image
       if: github.event_name != 'pull_request'
-      run: docker buildx build . --file Dockerfile --tag ${{ github.actor }}/java-dev-container:jdk22 --push
+      run: docker buildx build . --file Dockerfile --tag ${{ github.actor }}/java-dev-container:jdk22 --tag ${{ github.actor }}/java-dev-container:latest --push
 
 
