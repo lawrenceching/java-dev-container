@@ -39,4 +39,4 @@ jobs:
 
     - name: Push docker image
       if: github.event_name != 'pull_request'
-      run: docker push --tag ${{ github.actor }}:jdk22
+      run: docker push ${{ github.actor }}:jdk22
