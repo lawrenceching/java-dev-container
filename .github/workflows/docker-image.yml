@@ -26,7 +26,7 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        docker buildx build . --file Dockerfile --tag ${{ github.actor }}:jdk22
+        docker buildx build . --file Dockerfile --tag ${{ github.actor }}/java-dev-container:jdk22
         docker image ls
 
     # Login against a Docker registry except on PR
