@@ -3,4 +3,4 @@ COPY bin/* /tmp/
 RUN bash /tmp/init.sh
 WORKDIR /workspace
 
-ENTRYPOINT /entry.sh
+CMD [ "/entry.sh" ]
