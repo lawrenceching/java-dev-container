@@ -19,7 +19,7 @@ apt update
 apt install -y openssh-server git neovim htop tmux wget curl jq
 
 chmod +x /tmp/*.sh
-bash /tmp/install-java.sh
+bash /tmp/install-java.sh "$JDK_VERSION"
 
 cp /tmp/sshd_config /etc/ssh/sshd_config
 
