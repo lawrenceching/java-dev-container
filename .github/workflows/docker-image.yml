@@ -38,12 +38,14 @@ jobs:
       if: github.event_name != 'pull_request'
       run: |
         docker buildx build . --file Dockerfile --tag ${{ github.actor }}/java-dev-container:jdk22 --tag ${{ github.actor }}/java-dev-container:latest --load
-        docker run --rm ${{ github.actor }}/java-dev-container:jdk22 java --version
+        docker run --rm ${{ github.actor }}/java-dev-container:jdk22 bash -l -c 'java --version'
+        docker push ${{ github.actor }}/java-dev-container:jdk22
 
     - name: Build the Docker image - JDK17
       if: github.event_name != 'pull_request'
       run: |
         docker buildx build --build-arg INIT_JDK_VERSION=17.0.2 . --file Dockerfile --tag ${{ github.actor }}/java-dev-container:jdk17 --tag ${{ github.actor }}/java-dev-container:latest --load
-        docker run --rm ${{ github.actor }}/java-dev-container:jdk17 java --version
+        docker run --rm ${{ github.actor }}/java-dev-container:jdk17 bash -l -c 'java --version'
+        docker push ${{ github.actor }}/java-dev-container:jdk17
 
 
