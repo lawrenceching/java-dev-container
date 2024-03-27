@@ -20,6 +20,7 @@ apt install -y openssh-server git neovim htop tmux wget curl jq
 
 chmod +x /tmp/*.sh
 bash /tmp/install-java.sh "$JDK_VERSION"
+bash /tmp/install-maven.sh '3.6.3'
 
 cp /tmp/sshd_config /etc/ssh/sshd_config
 
