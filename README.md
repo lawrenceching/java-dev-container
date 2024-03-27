@@ -2,8 +2,9 @@
 
 An Java image for devcontainer and a SSH remote server for remote developer.
 
-Tags:
+Supported Tags:
 ```
+lawrenceching/java-dev-container:jdk17
 lawrenceching/java-dev-container:jdk22
 ```
 
