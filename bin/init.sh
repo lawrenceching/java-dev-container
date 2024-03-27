@@ -27,3 +27,4 @@ mkdir -p ~/.ssh
 cp /tmp/authorized_keys ~/.ssh/authorized_keys
 
 mv /tmp/entry.sh /entry.sh
+rm -rf /tmp/*
