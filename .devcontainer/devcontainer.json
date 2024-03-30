@@ -1,4 +1,6 @@
 {
   "name": "java",
-  "image":  "lawrenceching/java-dev-container:jdk22"
+//  "image":  "lawrenceching/java-dev-container:jdk22",
+  "image":  "lawrenceching/java-dev-container:tmp",
+  "forwardPorts": ["8022:22"]
 }
